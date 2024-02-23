@@ -27,7 +27,18 @@ const loadModel = (sequelize, DataTypes) => {
     }
   }
   Restaurant.init({
-    // TODO: Include the rest of the properties of the Restaurant model
+    name: DataTypes.STRING,
+    description: DataTypes.STRING,
+    address: DataTypes.STRING,
+    postalCode: DataTypes.STRING,
+    url: DataTypes.STRING,
+    shippingCosts: DataTypes.STRING,
+    email: DataTypes.STRING,
+    logo: DataTypes.STRING,
+    phone: DataTypes.STRING,
+    heroImage: DataTypes.STRING,
+    status: DataTypes.ENUM('online', 'offline', 'closed', 'temporaly closed')
+
 
   }, {
     sequelize,

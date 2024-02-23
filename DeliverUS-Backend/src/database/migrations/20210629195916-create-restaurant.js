@@ -5,9 +5,85 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: DataTypes.INTEGER
+      },
+
+      name: {
+        allowNull: false,
+        autoIncrement: false,
+        primaryKey: false,
+        type: DataTypes.STRING
+      },
+
+      description: {
+        allowNull: false,
+        autoIncrement: false,
+        primaryKey: false,
+        type: DataTypes.STRING
+      },
+
+      address: {
+        allowNull: false,
+        autoIncrement: false,
+        primaryKey: false,
+        type: DataTypes.STRING
+      },
+
+      postalCode: {
+        allowNull: false,
+        autoIncrement: false,
+        primaryKey: false,
+        type: DataTypes.STRING
+      },
+
+      url: {
+        allowNull: false,
+        autoIncrement: false,
+        primaryKey: false,
+        type: DataTypes.STRING
+      },
+
+      shippingCosts: {
+        allowNull: false,
+        autoIncrement: false,
+        primaryKey: false,
+        type: DataTypes.DOUBLE
+      },
+
+      email: {
+        allowNull: false,
+        autoIncrement: false,
+        primaryKey: false,
+        type: DataTypes.STRING
+      },
+
+      logo: {
+        allowNull: false,
+        autoIncrement: false,
+        primaryKey: false,
+        type: DataTypes.STRING
+      },
+
+      phone: {
+        allowNull: false,
+        autoIncrement: false,
+        primaryKey: false,
+        type: DataTypes.STRING
+      },
+
+      heroImage: {
+        allowNull: false,
+        autoIncrement: false,
+        primaryKey: false,
+        type: DataTypes.STRING
+      },
+
+      status: {
+        allowNull: false,
+        autoIncrement: false,
+        primaryKey: false,
+        type: DataTypes.ENUM('online', 'offline', 'closed', 'temporaly closed')
       }
-      // TODO: Include the rest of the fields of the Restaurants table
 
     })
   },
